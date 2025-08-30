@@ -1,0 +1,2 @@
+class GeoRegion < ApplicationRecord
+end
