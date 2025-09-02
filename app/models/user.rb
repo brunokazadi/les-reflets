@@ -9,6 +9,9 @@ class User < ApplicationRecord
     password_salt.last(10)
   end
 
+  has_many :organization_users
+  has_many :organizations, through: :organization_users
+
 
   has_many :sessions, dependent: :destroy
 
