@@ -69,3 +69,6 @@ gem "authentication-zero", "~> 4.0"
 gem "dotenv", groups: [ :development, :test ]
 
 gem "pundit", "~> 2.5"
+
+gem "view_component", "~> 4.0"
+gem "view_component-contrib", "~> 0.2.5"
