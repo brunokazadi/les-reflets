@@ -13,4 +13,8 @@ ActiveSupport.on_load(:view_component) do
   ViewComponent::Preview.extend ViewComponentContrib::Preview::Sidecarable
   # Enable `self.abstract_class = true` to exclude previews from the list
   ViewComponent::Preview.extend ViewComponentContrib::Preview::Abstract
+
+  if defined?(ViewComponent)
+    ViewComponent::Preview.preview_paths << Rails.root.join("app", "views", "components")
+  end
 end

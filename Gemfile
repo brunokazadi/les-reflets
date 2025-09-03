@@ -72,3 +72,6 @@ gem "pundit", "~> 2.5"
 
 gem "view_component", "~> 4.0"
 gem "view_component-contrib", "~> 0.2.5"
+
+# Dry Initializer [https://github.com/dry-rb]
+gem "dry-initializer", "~> 3.2"
